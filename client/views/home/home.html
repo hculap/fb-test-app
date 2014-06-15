@@ -1,0 +1,12 @@
+<template name="home">
+	Home
+	<div class="row">
+		{{#each images}}		  
+			<div class="col-md-6">
+				<div class="box">  
+				  <img src="{{this.url store='images'}}" class="img-rounded img-responsive center" alt="user picture">
+				</div>
+			</div>
+		{{/each}}
+	</div>
+</template>

@@ -1,0 +1,41 @@
+<template name="profileEdit">
+	<div class="box">
+		<div class="row">
+			<div class="col-md-6 col-md-offset-3">
+				<form role="form" id="edit-form">
+				  <div class="form-group">
+				    <label for="hometown">Hometown</label>
+				    <input type="text" class="form-control" name="hometown" placeholder="Enter hometown" value="{{profile.hometown}}">
+				  </div>
+				  <div class="form-group">
+				    <label for="location">Loaction</label>
+				    <input type="text" class="form-control" name="location" placeholder="Enter location" value="{{profile.location}}">
+				  </div>
+				 	<div class="form-group">
+				    <label for="bio">Bio</label>
+				  	<textarea rows="5" class="form-control" name="bio" placeholder="Enter your bio">{{profile.bio}}</textarea>
+				  </div>
+				  <button type="submit" class="btn btn-primary form-control">Save</button>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div class="box" value="Send image">
+		<input type="file" class="img-input">
+	</div>
+	<div class="row">
+		{{#each images}}		  
+			<div class="col-md-6">
+				<div class="box">  
+					<div>
+					  <img src="{{this.url store='images'}}" class="img-rounded img-responsive center" alt="user picture">
+					  <div class="img-edit">
+					  	<button class="btn btn-success btn-sm img-set">P</button>
+						  <button class="btn btn-danger btn-sm img-remove">X</button>
+					  </div>
+					</div>
+				</div>
+			</div>
+		{{/each}}
+	</div>
+</template>

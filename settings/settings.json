@@ -1,0 +1,12 @@
+{
+    "s3": {
+        "accessKeyId": "AKIAIOMNZCWUKJ2F6J2Q",
+        "secretAccessKey": "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",
+        "bucket": "befamous-dev-ireland-01"
+    },
+    "fb": {
+        "userData": "me/?fields=bio,birthday,email,first_name,hometown,id,last_name,location,gender,email",
+        "userPhotos": "me/photos?fields=source&limit=10",
+        "userPicture": "me?fields=picture"
+    }
+}

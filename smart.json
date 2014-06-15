@@ -1,0 +1,9 @@
+{
+  "packages": {
+    "npm": {},
+    "iron-router": {},
+    "bootstrap-3": {},
+    "collectionFS": {},
+    "cfs-s3": {}
+  }
+}
